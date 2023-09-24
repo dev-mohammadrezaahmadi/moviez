@@ -1,11 +1,19 @@
 <script setup lang="ts">
 const route = useRoute();
 
+const API_KEY = "3bc42bf45aeeacb02b1b8e960d246cc9";
 
-const API_KEY = "3bc42bf45aeeacb02b1b8e960d246cc9"
+const { data: movieInfo } = await useFetch<any>(
+  `https://api.themoviedb.org/3/movie/${route.params.id}?api_key=${API_KEY}&language=en-US`
+);
+const { data: movieCreditInfo } = await useFetch<any>(
+  `https://api.themoviedb.org/3/movie/${route.params.id}/credits?api_key=${API_KEY}`
+);
 
-const {data: movieInfo} = await useFetch<any>(`https://api.themoviedb.org/3/movie/${route.params.id}?api_key=${API_KEY}&language=en-US`)
-const {data: movieCreditInfo} = await useFetch<any>(`https://api.themoviedb.org/3/movie/${route.params.id}/credits?api_key=${API_KEY}`)
+useHead({
+  title: movieInfo.value.original_title
+})
+
 </script>
 
 <template>

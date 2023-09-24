@@ -1,3 +1,9 @@
+<script setup lang="ts">
+useHead({
+  title: 'Moviez'
+})
+</script>
+
 <template>
   <div>
     <NuxtLayout>

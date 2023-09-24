@@ -8,7 +8,7 @@ const BASE_URL = "https://image.tmdb.org/t/p/original";
 </script>
 
 <template>
-  <NuxtLink :href="`/${result.id}`">
+  <NuxtLink :href="`/movie/${result.id}`">
     <div
       class="group cursor-pointer p-2 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50"
     >

@@ -13,9 +13,10 @@ const BASE_URL = "https://image.tmdb.org/t/p/original";
       class="group cursor-pointer p-2 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50"
     >
       <NuxtImg
-        height="1080"
-        width="1920"
+        :height="360"
+        :width="640"
         alt="movie poster thumbnail"
+        :placeholder="[640, 360]"
         :src="`${BASE_URL}${result.backdrop_path || result.poster_path}`"
       />
       <div class="p-2">

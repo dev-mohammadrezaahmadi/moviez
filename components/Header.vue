@@ -11,7 +11,7 @@ import {
 
 <template>
   <header
-    class="flex flex-col sm:flex-row m-5 justify-between items-center h-auto bg-blue-950"
+    class="flex flex-col sm:flex-row m-5 justify-between items-center h-auto"
   >
     <div class="flex flex-grow justify-evenly max-w-2xl">
       <NuxtLink href="/">
@@ -21,7 +21,7 @@ import {
       </NuxtLink>
 
       <HeaderItem title="trending">
-        <BoltIcon  />
+        <BoltIcon />
       </HeaderItem>
       <HeaderItem title="verified">
         <CheckBadgeIcon />
@@ -37,13 +37,13 @@ import {
       </HeaderItem>
     </div>
     <NuxtLink href="/">
-      <!-- <Image
+      <NuxtImg
         src="/hulu-white.png"
-        width="{200}"
-        height="{100}"
-        alt="moviedb logo"
-        class="object-contain cursor-pointer"
-      /> -->
+        width="200"
+        height="100"
+        alt="website main logo"
+        class="cursor-pointer object-contain"
+      />
     </NuxtLink>
   </header>
 </template>

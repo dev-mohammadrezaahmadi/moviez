@@ -1,5 +1,3 @@
-<script lang="ts" setup></script>
-
 <template>
   <div>
     <Header />
@@ -7,4 +5,8 @@
   </div>
 </template>
 
-<style scoped></style>
+<style>
+body {
+  @apply bg-[#06202A] text-gray-300;
+}
+</style>

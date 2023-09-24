@@ -16,6 +16,7 @@
     "nuxt": "^3.7.3"
   },
   "dependencies": {
-    "@heroicons/vue": "^2.0.18"
+    "@heroicons/vue": "^2.0.18",
+    "tailwind-scrollbar-hide": "^1.1.7"
   }
 }
